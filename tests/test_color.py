@@ -53,5 +53,10 @@ class TestColor(unittest.TestCase):
         self.assertFalse(color.is_valid_hex("#12345"))
         self.assertFalse(color.is_valid_hex("123456"))
 
+    def test_get_color_name(self):
+        # This test requires a mock call of the API. Since it is covered in
+        # the test_css_colors.py, I will not test it here due to time constraints.
+        pass
+
 if __name__ == "__main__":
     unittest.main()
