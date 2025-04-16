@@ -1,5 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
+
 from src.css_colors import CSS_Colors
 
 class TestCSSColors(unittest.TestCase):
