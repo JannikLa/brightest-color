@@ -1,4 +1,23 @@
 # Programming Challenge: Brightest Color
+Author: Jannik Lassen
+Date: 2025-Apr-16
+
+## Description
+
+This code identifies the brightest color from a list of hexadecimal color values based on a brightness formula. It outputs the RGB components of the brightest color and optionally enhances the output with the color's name using an external API.
+
+## Repository Structure
+
+- src/
+  - `run_brightest_color.py`: Main script to find the brightest color (and name).
+  - `color.py`: Class definition for Color, including methods for brightness calculation.
+  - `css_colors.py`: Class definition for API interaction to fetch color names.
+- tests/
+  - `test_color.py`: Unit tests for the Color class.
+  - `test_css_color.py`: Unit tests for the API class.
+
+## Requirements
+- Python 3.9 or higher
 
 ## Task
 
