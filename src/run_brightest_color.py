@@ -5,6 +5,10 @@ def main(hex_list: List[str] = ["#AABBCC", "#154331", "#A0B1C2", "#000000"]):
     """Main function to return the brightest color from a list of hex colors.
        The function will return the first occurence of the brightest color"""
     
+    if len(hex_list) < 1:
+        print('Please provide two or more hex values.')
+        return
+    
     colors = [Color(hex_value) for hex_value in hex_list]
 
     brightest_color = max(colors)
@@ -26,4 +30,5 @@ def main(hex_list: List[str] = ["#AABBCC", "#154331", "#A0B1C2", "#000000"]):
 
 
 if __name__ == "__main__":
-    main()
+    test_case = []
+    main(test_case)
