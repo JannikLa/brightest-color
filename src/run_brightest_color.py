@@ -9,10 +9,20 @@ def main():
 
     brightest_color = max(colors)
 
-    print('\n --- Brightest Color (w/o Name) ---')
-    print(f'The brightest color is: {brightest_color.hex_value}' \
-          f'(r={brightest_color.red}, g={brightest_color.green}, ' \
-          f'b={brightest_color.blue})')
+    color_name = brightest_color.get_color_name()
+
+    if color_name:
+        print('\n --- Brightest Color (w/ Name) ---')
+        print(f'The brightest color is: {color_name} ' \
+              f'(r={brightest_color.red}, g={brightest_color.green}, ' \
+              f'b={brightest_color.blue}), called {color_name}.')
+        
+    else:
+        print('\n --- Brightest Color (w/o Name) ---')
+        print(f'The brightest color is: {brightest_color.hex_value}' \
+            f'(r={brightest_color.red}, g={brightest_color.green}, ' \
+            f'b={brightest_color.blue})')
+
 
 
 if __name__ == "__main__":
