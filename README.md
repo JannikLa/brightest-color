@@ -1,6 +1,6 @@
 # Programming Challenge: Brightest Color
-Author: Jannik Lassen
-Date: 2025-Apr-16
+- **Author**: Jannik Lassen
+- **Date**: 2025-Apr-16
 
 ## Description
 
