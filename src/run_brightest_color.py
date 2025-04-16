@@ -1,0 +1,19 @@
+from color import Color
+
+def main():
+    """Main function to return the brightest color from a list of hex colors.
+       The function will return the first occurence of the brightest color"""
+    
+    hex_list = ["#AABBCC", "#154331", "#A0B1C2", "#000000", "#FFFFFF"]
+    colors = [Color(hex_value) for hex_value in hex_list]
+
+    brightest_color = max(colors)
+
+    print('\n --- Brightest Color (w/o Name) ---')
+    print(f'The brightest color is: {brightest_color.hex_value}' \
+          f'(r={brightest_color.red}, g={brightest_color.green}, ' \
+          f'b={brightest_color.blue})')
+
+
+if __name__ == "__main__":
+    main()
