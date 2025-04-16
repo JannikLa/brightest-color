@@ -19,6 +19,10 @@ This code identifies the brightest color from a list of hexadecimal color values
 ## Requirements
 - Python 3.9 or higher
 
+## Implmentation Details
+- The program assumes a valid input list of two or more hexadecimal color values. It will raise an error if the input is invalid, but will not correct for missing '#' or similar issues.
+- The correctness of the functionality is tested using unittests in the `tests` directory. The tests cover various scenarios, including edge cases and invalid inputs.
+
 ## Task
 
 Hexadecimal color values are used for color values in frontend programming.
