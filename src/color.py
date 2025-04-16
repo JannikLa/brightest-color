@@ -36,6 +36,9 @@ class Color:
         """Validate the hex color string."""
         if not hex_value or not isinstance(hex_value, str):
             return False
+        if not hex_value.startswith('#'):
+            return False
+        
         hex_value = hex_value.lstrip('#')
         is_hex = (len(hex_value) == 6 and 
                   all(c in '0123456789ABCDEFabcdef' for c in hex_value))
