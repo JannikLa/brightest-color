@@ -7,9 +7,9 @@ class Color:
         if not self.is_valid_hex(hex_value):
             raise ValueError(f"Invalid hex color value: {hex_value}")
         
-        self.hex_value = hex_value
+        self.hex_value: str = hex_value
         self.red, self.green, self.blue = self.hex_to_rgb(hex_value)
-        self.brightness_value = self.brightness()
+        self.brightness_value: float = self.brightness()
 
     def __lt__(self, other: 'Color') -> bool:
         """Compare colors based on brightness (less than)."""
