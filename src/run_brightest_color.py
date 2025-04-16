@@ -1,7 +1,8 @@
 from color import Color
 from typing import List
 
-def main(hex_list: List[str] = ["#AABBCC", "#154331", "#A0B1C2", "#000000"]):
+def main(hex_list: List[str] = ["#AABBCC", "#154331", 
+                                "#A0B1C2", "#000000", "#FFFFFF"]):
     """Main function to return the brightest color from a list of hex colors.
        The function will return the first occurence of the brightest color"""
     
