@@ -30,5 +30,4 @@ def main(hex_list: List[str] = ["#AABBCC", "#154331", "#A0B1C2", "#000000"]):
 
 
 if __name__ == "__main__":
-    test_case = []
-    main(test_case)
+    main()
