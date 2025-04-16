@@ -1,6 +1,7 @@
 from typing import Tuple
 import math
-import requests
+
+from css_colors import CSS_Colors
 
 class Color:
     def __init__(self, hex_value: str):
@@ -52,3 +53,16 @@ class Color:
             0.691 * (self.green ** 2) + 
             0.068 * (self.blue ** 2)
         )
+    
+    def get_color_name(self) -> str:
+        """Get the name of the color using the CSS Colors API."""
+        try:
+            css_colors = CSS_Colors()
+        except Exception as e:
+            return ""
+        
+        name = css_colors.get_matching_color_name(self.red, 
+                                                  self.green, 
+                                                  self.blue)
+        return name
+    
